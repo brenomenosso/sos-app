@@ -40,11 +40,13 @@ dependencies:
   bloc: ^8.1.4
   flutter_getit: ^2.0.0
   geolocator: ^11.1.0
+  geolocator_android: 4.5.5
   audioplayers: ^5.2.1
   pulsator: ^1.0.0+2
   torch_controller: ^2.0.1
   flutter_secure_storage: ^9.2.2
   asyncstate: ^2.1.0
+  meta: ^1.10.0
 
 dev_dependencies:
   flutter_test:
