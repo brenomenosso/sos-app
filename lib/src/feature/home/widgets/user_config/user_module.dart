@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:sos_app/src/feature/home/widgets/user_config/cubit/user_cubit_cubit.dart';
 import 'package:sos_app/src/feature/home/widgets/user_config/user_config_page.dart';
-import 'package:sos_app/src/services/auth_service.dart';
+import 'package:sos_app/src/services/auth/auth_service.dart';
 
 class UserModule extends FlutterGetItModulePageRouter {
 

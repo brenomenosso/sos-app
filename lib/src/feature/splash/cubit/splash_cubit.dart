@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:sos_app/src/services/auth_service.dart';
+import 'package:sos_app/src/services/auth/auth_service.dart';
 
 part 'splash_state.dart';
 

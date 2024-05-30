@@ -2,14 +2,14 @@ import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:sos_app/model/user_model.dart';
 import 'package:sos_app/src/repositories/user/user_repository.dart';
-import 'package:sos_app/src/services/auth_service.dart';
+import 'package:sos_app/src/services/auth/auth_service.dart';
 
 part 'user_cubit_state.dart';
 
 class UserCubitCubit extends Cubit<UserCubitState> {
 
-  UserRepository _userRepository;
-  AuthService _authService;
+  final UserRepository _userRepository;
+  final AuthService _authService;
 
   UserCubitCubit({
     required UserRepository userRepository, 

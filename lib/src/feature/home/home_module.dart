@@ -19,7 +19,7 @@ class HomeModule extends FlutterGetItModule {
   List<Bind<Object>> get bindings => [
     //controller
     Bind.lazySingleton<LocationRepository>((i) => LocationRepositoryImpl(dio: i())),
-    Bind.lazySingleton((i) => SosCubit(repository: i(), authService: i())),
+    Bind.lazySingleton((i) => SosCubit(repository: i(), authService: i(), locationsService: i())),
   ];
 
   @override

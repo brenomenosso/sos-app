@@ -12,11 +12,14 @@ class _MapButtonState extends State<MapButton> {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.small(
-        heroTag: 'map_button', 
+        heroTag: 'map_button',
         onPressed: () {
-          showModalBottomSheet(context: context, builder: (context) => const MapModule());        
-        }, 
-        child: const Icon(Icons.flood_outlined)
-    );
+          showModalBottomSheet(
+            showDragHandle: true,
+            context: context,
+            builder: (context) => const MapModule(),
+          );
+        },
+        child: const Icon(Icons.flood_outlined));
   }
 }
