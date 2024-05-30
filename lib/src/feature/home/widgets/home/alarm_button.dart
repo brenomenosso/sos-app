@@ -20,7 +20,7 @@ class _AlarmButtonState extends State<AlarmButton> {
   void initState() {
     super.initState();
     audioPlayer = context.get();
-    audioPlayer!.setSource(AssetSource('audios/siren.wav'));
+    //audioPlayer!.setSource(AssetSource('audios/siren.wav'));
   }
 
   @override

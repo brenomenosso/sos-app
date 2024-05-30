@@ -14,7 +14,7 @@ class ApplicationBinding extends ApplicationBindings {
   @override
   List<Bind<Object>> bindings() => [
     Bind.lazySingleton<Dio>((i) => Dio()..interceptors.add(B4aInterceptor())),
-    Bind.lazySingleton<AudioPlayer>((i) => AudioPlayer()..setReleaseMode(ReleaseMode.loop)),
+    Bind.lazySingleton<AudioPlayer>((i) => AudioPlayer()..setReleaseMode(ReleaseMode.loop)..setSource(AssetSource('audios/siren.wav'))),
     Bind.lazySingleton<FlutterSecureStorage>((i) => const FlutterSecureStorage()),
     Bind.lazySingleton<UserRepository>((i) => UserRepositoryImpl(dio: i())),
     Bind.lazySingleton<LocatorService>((i) => LocatorService()..init()),
